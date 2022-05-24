@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
-
 :root{
     --grey: #272727;
     --white: #e6e6e6;
@@ -41,18 +39,26 @@ img{
 
 body{
     overflow: hidden;
+    z-index: 1;
 
     display: grid;
     place-items: center;
 
     width: 100%;
     max-height: 100vh;
+
+    background-size: cover;
+    background-image: url(../assets/img/coffee-store-cover--desktop.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: var(--grey);
     
     font-family: 'Poppins', sans-serif;
     font-size: 16rem;
 }
 
-header{
+.logo-bk{
     position: fixed;
     z-index: 10;
     top: 0;
@@ -64,6 +70,7 @@ header{
 
     background: var(--black);
     color: var(--beige);
+    box-shadow: 0 6px 18px #000000ee;
 }
 
 .logo-box{
@@ -102,23 +109,20 @@ header{
 .logo-box__logo > i{
     color: var(--orange);
 
-    font-size: 30px;
+    font-size: calc(var(--lg) + 6rem);
 }
 
-main{
-    display: grid;
-    place-items: center;
-
+.cover-bk{
     width: 100%;
-    height: 100vh;
 }
 
 .cover-img{
-    overflow: hidden;
     position: relative;
 
     display: grid;
     place-items: center;
+
+    height: 100vh;
 }
 
 .cover-img::before{
@@ -150,7 +154,7 @@ main{
     color: var(--white);
 
     text-align: center;
-    font-size: 28rem;
+    font-size: calc(var(--lg) + 4rem);
 }
 
 .cover-img__text > a{
@@ -169,7 +173,7 @@ main{
     color: var(--black);
 }
 
-footer{
+.social-bk{
     position: fixed;
     z-index: 10;
     bottom: 0;
@@ -183,37 +187,30 @@ footer{
 }
 
 .social-media{
-    padding: 10px 24px;
+    padding: 10px 0;
 
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
 
     width: 100%;
 
-    font-size: var(--lg);
+    font-size: calc(var(--lg) + 4px);
 }
 
 .social-media > a{
     color: var(--white);
 }
 
-
-@media screen and (min-width: 1025px) and (max-width: 1545px){
-    .cover-img > picture{
-        width: auto;
-        height: 100vh;
-    }
-}
-
-@media screen and (max-width: 684px){
-    .cover-img > picture{
-        width: auto;
-        height: 100vh;
-    }
+.social-media > a:hover{
+    color: var(--beige);
 }
 
 @media screen and (max-width: 428px){
+    body{
+        background-image: url(../assets/img/coffee-store-cover--smartphone.jpg);
+    }
+
     .logo-box{
         width: 90%;
     }
@@ -227,7 +224,11 @@ footer{
     }
 
     .logo-box__logo{
-        font-size: 14rem;
+        font-size: calc(var(--sm) - 4rem);
+    }
+
+    .cover-img__text{
+        gap: 60px;
     }
 }
 
