@@ -1,0 +1,25 @@
+@media screen and (max-width: 428px){
+    .logo-box{
+        width: 90%;
+    }
+    
+    .logo-box > a > span{
+        display: none;
+    }
+    
+    .logo-box > a > i{
+        display: block;
+    }
+
+    .logo-box__logo{
+        font-size: calc(var(--lg) - 4rem);
+    }
+
+    .cover-img{
+        background-image: url(../assets/img/coffee-store-cover--smartphone.jpg);
+    }
+
+    .cover-img__text{
+        gap: 60px;
+    }
+}

@@ -1,0 +1,90 @@
+.logo-bk{
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+
+    background: var(--black);
+    color: var(--beige);
+    box-shadow: 0 8px 20px #00000058;
+}
+
+.logo-box{
+    padding: 24px 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 80%;
+}
+
+.logo-box__logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    color: var(--beige);
+
+    font-size: var(--lg);
+    font-weight: var(--bold);
+}
+
+.logo-box__logo > i{
+    color: var(--orange);
+
+    font-size: calc(var(--lg) + 6rem);
+}
+
+.logo-box__links{
+    color: var(--white);
+
+    font-size: var(--md);
+    font-weight: var(--bold);
+}
+
+.logo-box__links:hover {
+    color: var(--beige);
+}
+
+.logo-box__links > i{
+    display: none;
+}
+
+/* 
+    #################
+    ################# 
+*/
+
+.social-bk{
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+
+    background: var(--brown);
+}
+
+.social-media{
+    padding: 10px 0;
+
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+    width: 100%;
+
+    font-size: calc(var(--lg) + 4px);
+}
+
+.social-media > a{
+    color: var(--white);
+}
+
+.social-media > a:hover{
+    color: var(--beige);
+}

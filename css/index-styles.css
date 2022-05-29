@@ -1,0 +1,71 @@
+.cover-bk{
+    width: 100%;
+}
+
+.cover-img{
+    position: relative;
+
+    display: grid;
+    place-items: center;
+
+    height: 100vh;
+
+    background-size: cover;
+    background-image: url(../assets/img/coffee-store-cover--desktop.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.cover-img::before{
+    position: absolute;
+    z-index: 2;
+    content: '';
+    
+    width: 100%;
+    height: 100%;
+
+    opacity: .2;
+    background: var(--grey);
+}
+
+.cover-img__text{
+    position: absolute;
+    z-index: 3;
+    padding-bottom: 40px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+
+    max-width: 600px;
+    width: 90%;
+    min-width: 120px;
+
+    color: var(--white);
+
+    text-align: center;
+    font-size: calc(var(--lg) + 4rem);
+}
+
+.cover-img__text > a{
+    padding: 12px 18px;
+    
+    border-radius: 8px;
+    background: var(--orange);
+    color: var(--white);
+
+    font-size: var(--lg);
+    font-weight: var(--bold);
+}
+
+.cover-img__text > a:hover{
+    background: var(--beige);
+    color: var(--black);
+}
+
+.social-bk{
+    position: absolute;
+    bottom: 0;
+}
