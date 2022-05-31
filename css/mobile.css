@@ -22,4 +22,33 @@
     .cover-img__text{
         gap: 60px;
     }
+    
+    .principal-content{
+        align-items: center;
+    }
+
+    .principal-content__title{
+        width: 100%;
+
+        border-bottom: 1px solid var(--grey);
+
+        text-align: center;
+    }
+
+    .principal-content__blog{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .principal-content__blog__info{
+        padding: 0;
+        max-width: 300px;
+        width: 100%;
+        min-width: 270px;
+    }
+
+    .all-blogs-box__blogs{
+        grid-template-columns: minmax(70%, 100%);
+    }
 }

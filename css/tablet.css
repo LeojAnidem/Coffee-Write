@@ -1,0 +1,23 @@
+@media screen and (min-width: 428px) and (max-width: 1200px){
+    .principal-content{
+        align-items: center;
+    }
+
+    .principal-content__title{
+        width: 100%;
+
+        border-bottom: 1px solid var(--grey);
+
+        text-align: center;
+    }
+
+    .principal-content__blog{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .all-blogs-box__blogs{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

@@ -1,5 +1,3 @@
-@import url(./mobile.css);
-
 :root{
     --grey: #272727;
     --white: #e6e6e6;
@@ -40,8 +38,6 @@ img{
 }
 
 body{
-    background-color: var(--grey);
-    
     font-family: 'Poppins', sans-serif;
     font-size: 16rem;
 }
