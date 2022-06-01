@@ -59,6 +59,65 @@
     #################
     ################# 
 */
+footer{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.contact{
+    padding: 60px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    background: var(--orange);
+    color: var(--white);
+
+    width: 100%;
+}
+
+.contact__info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contact__info__img--read{
+    width: 70px;
+    height: 70px;
+    
+    background: url(../assets/img/013-newsletter.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.contact__info__img--write{
+    width: 70px;
+    height: 70px;
+    
+    background: url(../assets/img/006-like.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.contact__info__detail{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    width: 50%;
+}
+
+.contact__info__detail > span{
+    padding-bottom: 4px;
+
+    border-bottom: 1px solid var(--white);
+
+    font-weight: var(--bold);
+}
 
 .social-bk{
     display: flex;
