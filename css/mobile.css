@@ -51,4 +51,23 @@
     .all-blogs-box__blogs{
         grid-template-columns: minmax(70%, 100%);
     }
+
+    .blog-cover-img{
+        height: 300px;
+    }
+
+    .blog-contain{
+        width: 80%;
+    }
+
+    .contact{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    .contact__info__detail{
+        width: 70%;
+    }
 }

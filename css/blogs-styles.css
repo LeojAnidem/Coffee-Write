@@ -38,10 +38,6 @@ main{
     gap: 80px;
 }
 
-.principal-content__blog__info{
-    /* padding: 0 80px; */
-}
-
 .blog__info{
     display: flex;
     flex-direction: column;

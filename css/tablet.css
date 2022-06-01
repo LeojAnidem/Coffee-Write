@@ -20,4 +20,8 @@
     .all-blogs-box__blogs{
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .blog-cover-img{
+        height: 400px;
+    }
 }
