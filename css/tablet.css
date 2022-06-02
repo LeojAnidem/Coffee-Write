@@ -24,4 +24,8 @@
     .blog-cover-img{
         height: 400px;
     }
+
+    .my-projects__projects{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }

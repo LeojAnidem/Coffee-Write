@@ -70,4 +70,18 @@
     .contact__info__detail{
         width: 70%;
     }
+
+    .about-me__contain{
+        flex-direction: column;
+    }
+
+    .about-me__contain__img,
+    .about-me__contain__info
+    {
+        width: 100%;
+    }
+
+    .my-projects__projects{
+        grid-template-columns: 1fr;
+    }
 }
