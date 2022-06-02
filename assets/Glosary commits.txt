@@ -1,0 +1,5 @@
+glosary:
+    . '--': Terminado.
+    . '**': En progreso.
+    . '++': Tareas Para futuros commits.
+    . '==': Issues.
